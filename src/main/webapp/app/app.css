@@ -1,12 +1,130 @@
+/* BASE
+******************************/
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1.6em; // currently ems cause chrome bug misinterpreting rems on body element
+  font-weight: 400;
+  line-height: 2.4em;
+  color: #111111;
+}
+
+a {
+  cursor: pointer;
+}
+
+/* HEADER
+******************************/
+.main-header {
+  width: 100%;
+  height: 100vh;
+  background: url('http://i.imgur.com/Geqreen.png');
+  background-size: cover;
+  text-align: center;
+}
+
+.main-header-content {
+  padding-top: 10vh;
+}
+
+.logo {
+  max-width: 140px;
+  max-height: 140px;
+}
+
+.brand {
+  color: white;
+  font-size: 38px;
+  margin: 1em 0 1em 0;
+}
+
+.brand-info {
+  margin: 1em 0 3em 0;
+  color: white;
+  font-size: 18px;
+  line-height: 1.5em;
+}
+
+.main-header-btn {
+  font-size: 14px;
+  border: 1px solid rgba(255,255,255,.1);
+  border-radius: 2px;
+  padding: 1em;
+  color: white;
+  text-decoration: none;
+  background: rgba(255,255,255,.2);
+  margin: 1em;
+}
+
+.main-header-btn:hover {
+  color: white;
+  text-decoration: none;
+  border: 1px solid rgba(255,255,255,.1);
+  background: rgba(255,255,255,.2);
+  box-shadow: 0 0 50px rgba(255,255,255,0.3);
+}
+
+@media
+
+/* NAVBAR
+******************************/
+.navbar {
+  border: 0px;
+}
+
+.navbar-static-top {
+  background-color: transparent;
+  border-bottom: 1px solid rgba(255,255,255,.2);
+}
+
+.navbar-collapse {
+  border-top: none;
+}
+
+.navbar-brand {
+  padding: 4px 0;
+}
+.navbar-header a img.logo-img {
+  height: 40px;
+}
+
+.icon-bar {
+  background-color: white;
+}
+
+.nav-item a {
+  color: white;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.nav>li>a:focus,
+.nav>li>a:hover {
+    text-decoration: none;
+    background-color: transparent;
+}
+
+a:hover > .nav-span {
+  border-bottom: 1px dotted white;
+}
+
+
+
+@media (min-width: 544px) {
+  .navbar {
+      border-radius: 0px;
+  }
+}
+
+
 /* cryptonomica css */
 
-/*body {
-    background: #bbbbbb url(img/background.big.001.png) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}*/
+
 
 footer {
     background-color: #dddddd;
@@ -20,52 +138,26 @@ No js needed */
     text-transform: capitalize;
 }
 
-.nav-tabs .nav-link.active, .nav-tabs .nav-link.active:focus, .nav-tabs .nav-link.active:hover, .nav-tabs .nav-item.open .nav-link, .nav-tabs .nav-item.open .nav-link:focus, .nav-tabs .nav-item.open .nav-link:hover,
-.card {
-    background-color: #fafafa;
-}
 
-.navbar {
-    /*background-color: #DD4500;*/
-    border-color: #DD4500;
-    margin-bottom: 0.3em;
-}
 
-.container {
-    border-width: 0;
-}
 
-.logo-background {
-    /*background-image: url("images/logo.004.crop.gray.svg");*/
-    background-position: center;
-    background-repeat: no-repeat;
-}
+.stickyFooter {
+  min-height: calc(100vh - 120px); }
 
-.card-tab-panel {
-    border-top-width: 0;
-}
 
-.whitelink {
-    color: white;
-}
+
+
+
+
+
+
 
 /* Links */
 
-a,
-a:visited,
-a:focus,
-a:hover {
-    color: orangered;
-    /*color: red;*/
-    /*color: #dd4814;*/
-}
+
 
 /*----- Icons ------------- */
 
-.orangeicon {
-    /*color: #dd4500; */
-    /*color: orangered;*/
-}
 
 .fa-key {
     /*color: orangered;*/
@@ -107,15 +199,3 @@ a:hover {
     padding: 2px !important;
     margin-bottom: 0.5em !important;
 }
-
-/* temorary icons: */
-/*
-.fa,
-.octicon,
-.mega-octicon {
-    color: orangered; /**/
-/*color: lime;*/
-/* lime - #00ff00 */
-
-/*}*/
-
